@@ -1,0 +1,340 @@
+.AboutUsGrid {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: grid;
+  grid-template-columns: repeat(16, 1fr);
+  grid-template-rows: repeat(12, 40px);
+  border: 1px solid #ebebeb;
+}
+
+.AboutUsGrid__item {
+  box-sizing: border-box;
+  font-size: 16px;
+  text-align: center;
+  color: #3c4a61;
+  font-weight: 400;
+  line-height: 1;
+  text-transform: uppercase;
+  border-right: 1px solid #ebebeb;
+  border-bottom: 1px solid #ebebeb;
+  display: flex;
+  align-items: center;
+}
+
+.AboutUsGrid__title {
+  display: block;
+}
+
+.AboutUsGrid__item_feature_partner {
+  grid-column: 1 / span 4;
+  grid-row: 1 / span 4;
+  padding-right: 15%;
+  padding-left: 47%;
+  background: url('./AboutUsGrid__item_feature_partner.png') 15% center
+    no-repeat;
+  background-size: 23%;
+}
+
+.AboutUsGrid__item_feature_emploees {
+  grid-column: 5 / span 4;
+  grid-row: 1 / span 7;
+  padding-left: 15%;
+  padding-right: 15%;
+  padding-bottom: 55px;
+  align-items: flex-end;
+  background: url('./AboutUsGrid__item_feature_emploees.png') center 35%
+    no-repeat;
+  background-size: 43%;
+}
+
+.AboutUsGrid__item_feature_teams {
+  grid-column: 1 / span 4;
+  grid-row: 5 / span 8;
+  padding-left: 15%;
+  padding-right: 15%;
+  padding-bottom: 40px;
+  align-items: flex-end;
+  background: url('./AboutUsGrid__item_feature_teams.png') center 35% no-repeat;
+  border-bottom: none;
+  background-size: 55%;
+}
+.AboutUsGrid__item_feature_uk {
+  grid-column: 5 / span 2;
+  grid-row: 8 / span 5;
+  padding-left: 15%;
+  padding-right: 15%;
+  padding-bottom: 40px;
+  align-items: flex-end;
+  background: url('./AboutUsGrid__item_feature_uk.png') center 20% no-repeat;
+  border-bottom: none;
+  background-size: 30%;
+}
+
+.AboutUsGrid__item_feature_iso {
+  grid-column: 7 / span 2;
+  grid-row: 8 / span 5;
+  padding-left: 5%;
+  padding-right: 5%;
+  padding-bottom: 40px;
+  align-items: flex-end;
+  background: url('./AboutUsGrid__item_feature_iso.png') center 30% no-repeat;
+  border-bottom: none;
+  background-size: 30%;
+}
+
+.AboutUsGrid__item_feature_hours {
+  grid-column: 9 / span 3;
+  grid-row: 1 / span 3;
+  padding-left: 10%;
+  padding-right: 47%;
+  background: url('./AboutUsGrid__item_feature_hours.png') 85% center no-repeat;
+  background-size: 26%;
+}
+
+.AboutUsGrid__item_feature_retention {
+  grid-column: 9 / span 3;
+  grid-row: 4 / span 3;
+  padding-left: 10%;
+  padding-right: 10%;
+  align-items: flex-end;
+  padding-bottom: 25px;
+  background: url('./AboutUsGrid__item_feature_retention.png') center 30%
+    no-repeat;
+  background-size: 37%;
+}
+
+.AboutUsGrid__item_feature_hd {
+  grid-column: 12 / span 5;
+  grid-row: 1 / span 6;
+  padding-left: 15%;
+  padding-right: 15%;
+  padding-bottom: 40px;
+  align-items: flex-end;
+  background: url('./AboutUsGrid__item_feature_hd.png') center 20% no-repeat;
+  border-right: none;
+  background-size: 33%;
+}
+
+.AboutUsGrid__item_feature_dna {
+  grid-column: 9 / span 5;
+  grid-row: 7 / span 6;
+  padding-left: 18%;
+  padding-right: 18%;
+  padding-bottom: 40px;
+  align-items: flex-end;
+  background: url('./AboutUsGrid__item_feature_dna.png') center 30% no-repeat;
+  border-bottom: none;
+  background-size: 66%;
+}
+
+.AboutUsGrid__item_feature_female {
+  grid-column: 14 / span 3;
+  grid-row: 7 / span 6;
+  padding-left: 10%;
+  padding-right: 10%;
+  padding-bottom: 40px;
+  align-items: flex-end;
+  background: url('./AboutUsGrid__item_feature_female.png') center 30% no-repeat;
+  border-bottom: none;
+  border-right: none;
+  background-size: 47%;
+}
+
+@media only screen and (max-width: 1024px) {
+  .AboutUsGrid__item {
+    font-size: 14px;
+  }
+}
+
+@media only screen and (max-width: 980px) {
+  .AboutUsGrid__item_feature_hours {
+    align-items: flex-end;
+    padding-bottom: 10px;
+    padding-left: 15%;
+    padding-right: 15%;
+    background-position: center 25%;
+    background-size: 26%;
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 980px) {
+  .AboutUsGrid {
+    grid-template-rows: repeat(12, 34px);
+  }
+
+  .AboutUsGrid__item_feature_teams,
+  .AboutUsGrid__item_feature_uk,
+  .AboutUsGrid__item_feature_iso,
+  .AboutUsGrid__item_feature_dna,
+  .AboutUsGrid__item_feature_female,
+  .AboutUsGrid__item_feature_hd,
+  .AboutUsGrid__item_feature_emploees {
+    padding-bottom: 20px;
+  }
+
+  .AboutUsGrid__item_feature_retention {
+    padding-bottom: 10px;
+  }
+}
+
+@media only screen and (min-width: 481px) and (max-width: 767px) {
+  .AboutUsGrid {
+    grid-template-rows: repeat(20, 42px);
+  }
+  .AboutUsGrid__item_feature_partner {
+    grid-column: 1 / span 8;
+    grid-row: 1 / span 4;
+  }
+  .AboutUsGrid__item_feature_emploees {
+    grid-column: 9 / span 8;
+    grid-row: 1 / span 5;
+    padding-bottom: 20px;
+    border-right: none;
+  }
+  .AboutUsGrid__item_feature_teams {
+    grid-column: 1 / span 8;
+    grid-row: 5 / span 6;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #ebebeb;
+  }
+  .AboutUsGrid__item_feature_uk {
+    grid-column: 9 / span 4;
+    grid-row: 6 / span 5;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #ebebeb;
+    background-position-y: 40%;
+  }
+
+  .AboutUsGrid__item_feature_iso {
+    grid-column: 13 / span 4;
+    grid-row: 6 / span 5;
+    border-right: none;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #ebebeb;
+    background-position-y: 40%;
+  }
+
+  .AboutUsGrid__item_feature_hours {
+    grid-column: 1 / span 6;
+    grid-row: 11 / span 3;
+  }
+
+  .AboutUsGrid__item_feature_retention {
+    grid-column: 1 / span 6;
+    grid-row: 14 / span 2;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #ebebeb;
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .AboutUsGrid__title_feature_retention,
+  .AboutUsGrid__title_feature_hours {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .AboutUsGrid__item_feature_hd {
+    grid-column: 7 / span 10;
+    grid-row: 11 / span 5;
+    padding-bottom: 20px;
+  }
+
+  .AboutUsGrid__item_feature_dna {
+    grid-column: 1 / span 9;
+    grid-row: 16 / span 5;
+    padding-bottom: 20px;
+  }
+
+  .AboutUsGrid__item_feature_female {
+    grid-column: 10 / span 7;
+    grid-row: 16 / span 5;
+    padding-bottom: 20px;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .AboutUsGrid {
+    grid-template-rows: repeat(20, 47px);
+  }
+  .AboutUsGrid__item_feature_partner {
+    grid-column: 1 / span 8;
+    grid-row: 1 / span 4;
+    padding-bottom: 20px;
+    align-items: flex-end;
+    padding-left: 15%;
+    padding-right: 15%;
+    background-position: center 25%;
+    background-size: 40%;
+  }
+  .AboutUsGrid__item_feature_emploees {
+    grid-column: 1 / span 16;
+    grid-row: 5 / span 5;
+    padding-bottom: 20px;
+    border-right: none;
+  }
+  .AboutUsGrid__item_feature_teams {
+    grid-column: 9 / span 8;
+    grid-row: 1 / span 4;
+    padding-bottom: 20px;
+    padding-left: 2%;
+    padding-right: 2%;
+    border-right: none;
+    border-bottom: 1px solid #ebebeb;
+  }
+  .AboutUsGrid__item_feature_uk {
+    grid-column: 1 / span 8;
+    grid-row: 10 / span 3;
+    padding-bottom: 10px;
+    padding-left: 0;
+    padding-right: 0;
+    border-bottom: 1px solid #ebebeb;
+    background-position-y: 20%;
+  }
+
+  .AboutUsGrid__title_feature_uk {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .AboutUsGrid__item_feature_iso {
+    grid-column: 9 / span 8;
+    grid-row: 10 / span 3;
+    border-right: none;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #ebebeb;
+    background-position-y: 40%;
+  }
+
+  .AboutUsGrid__item_feature_hours {
+    grid-column: 1 / span 6;
+    grid-row: 13 / span 2;
+  }
+
+  .AboutUsGrid__item_feature_retention {
+    grid-column: 1 / span 6;
+    grid-row: 15 / span 2;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #ebebeb;
+    padding-right: 5%;
+    padding-left: 5%;
+  }
+  .AboutUsGrid__item_feature_hd {
+    grid-column: 7 / span 10;
+    grid-row: 13 / span 4;
+    padding-bottom: 20px;
+  }
+
+  .AboutUsGrid__item_feature_dna {
+    grid-column: 1 / span 10;
+    grid-row: 17 / span 4;
+    padding-bottom: 20px;
+  }
+
+  .AboutUsGrid__item_feature_female {
+    grid-column: 11 / span 6;
+    grid-row: 17 / span 4;
+    padding-bottom: 20px;
+  }
+}

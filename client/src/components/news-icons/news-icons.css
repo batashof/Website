@@ -1,0 +1,69 @@
+.NewsIcons {
+  padding: 0 20px 0 0;
+  box-sizing: border-box;
+  position: relative;
+}
+.NewsIcons__date {
+  text-align: center;
+  background-color: #3c4a61;
+  padding: 10px 0;
+  color: #fff;
+  width: 70px;
+  box-sizing: border-box;
+  font-weight: 400;
+}
+.NewsIcons__date-day {
+  font-size: 24px;
+  margin: 0;
+  display: block;
+}
+.NewsIcons__date-month {
+  margin: 0;
+  font-size: 16px;
+  display: block;
+}
+.NewsIcons__views {
+  padding-top: 20px;
+  width: 70px;
+  height: 85px;
+  text-align: center;
+  box-sizing: border-box;
+}
+
+@media only screen and (max-width: 1024px) {
+  .NewsSocialBlock__item {
+    margin-bottom: 0;
+  }
+}
+
+@media only screen and (min-width: 641px) and (max-width: 980px) {
+  .NewsIcons {
+    width: 100%;
+    display: flex;
+    padding: 0 0 20px;
+  }
+  .NewsIcons__views {
+    padding-top: 5px;
+    margin-left: 15px;
+    height: 70px;
+  }
+}
+
+@media only screen and (max-width: 640px) {
+  .NewsIcons__views {
+    padding-top: 5px;
+    margin-left: 15px;
+    height: 70px;
+  }
+  .NewsIcons {
+    width: 100%;
+    display: flex;
+    padding: 0 0 20px;
+  }
+  .NewsIcons .NewsSocialBlock {
+    white-space: nowrap;
+  }
+  .NewsIcons .NewsSocialBlock__item {
+    width: 40px;
+  }
+}

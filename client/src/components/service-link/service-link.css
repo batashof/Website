@@ -1,0 +1,110 @@
+.ServiceLink {
+  position: relative;
+  display: block;
+  padding: 0 50px 36px 0;
+  position: relative;
+  line-height: 1.4;
+}
+
+.ServiceLink:before {
+  width: 45px;
+  height: 1px;
+  top: 13px;
+  left: -59px;
+  content: "";
+  display: block;
+  position: absolute;
+  opacity: 0;
+  transition: opacity 0.15s linear;
+}
+
+.ServiceLink:after {
+  content: "";
+  display: block;
+  position: absolute;
+  opacity: 0;
+  transition: opacity 0.15s linear;
+  width: 7px;
+  height: 7px;
+  top: 10px;
+  left: -20px;
+  border-radius: 100%;
+}
+
+.ServiceLink:hover:before,
+.ServiceLink:hover:after {
+  opacity: 1;
+}
+
+.ServiceLink__title {
+  display: block;
+  font-size: 22px;
+  transition: color 0.15s linear;
+  text-transform: uppercase;
+}
+
+.ServiceLink_section_team-augmentation:hover .ServiceLink__title {
+  color: #75c8d2;
+}
+
+.ServiceLink_section_team-augmentation:hover:before,
+.ServiceLink_section_team-augmentation:hover:after {
+  background-color: #75c8d2;
+}
+
+.ServiceLink_section_dedicated-teams:hover .ServiceLink__title {
+  color: #e45062;
+}
+
+.ServiceLink_section_dedicated-teams:hover:before,
+.ServiceLink_section_dedicated-teams:hover:after {
+  background-color: #e45062;
+}
+
+.ServiceLink_section_project-based:hover .ServiceLink__title {
+  color: #8dc63f;
+}
+
+.ServiceLink_section_project-based:hover:before,
+.ServiceLink_section_project-based:hover:after {
+  background-color: #8dc63f;
+}
+
+.ServiceLink_section_product-development:hover .ServiceLink__title {
+  color: #af90cb;
+}
+
+.ServiceLink_section_product-development:hover:before,
+.ServiceLink_section_product-development:hover:after {
+  background-color: #af90cb;
+}
+
+.ServiceLink__text {
+  font-size: 14px;
+  letter-spacing: -0.23px;
+  text-transform: none;
+  font-weight: 200;
+}
+
+@media only screen and (max-width: 767px) {
+  .ServiceLink {
+    padding: 0;
+  }
+
+  .ServiceLink:hover .ServiceLink__title {
+    color: #fff;
+  }
+
+  .ServiceLink:hover:before,
+  .ServiceLink:hover:after {
+    display: none;
+  }
+
+  .ServiceLink__title {
+    font-size: 16px;
+  }
+
+  .ServiceLink__text {
+    display: none;
+  }
+}

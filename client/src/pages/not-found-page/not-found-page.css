@@ -1,0 +1,38 @@
+.Redirect {
+  padding-top: 163px;
+  padding-bottom: 50px;
+}
+
+.Redirect .Button:hover {
+  color: #3c4a61;
+}
+
+.Redirect__title {
+  font-size: 45px;
+  font-weight: 400;
+  margin-bottom: 25px;
+  color: #3c4a61;
+}
+
+.mainRedirect + .Footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+@media only screen and (max-width: 1024px) {
+  .mainRedirect + .Footer {
+    position: static;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .Redirect .Button {
+    width: 100%;
+  }
+
+  .Redirect {
+    padding-top: 70px;
+  }
+}

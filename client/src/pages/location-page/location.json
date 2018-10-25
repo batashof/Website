@@ -1,0 +1,77 @@
+{
+  "minsk": {
+    "city": "Minsk",
+    "address": "Dzerzhinskogo av, 5-527",
+    "index": "220089",
+    "tel": "0161 219 8100",
+    "text":
+      "Godel’s largest development centre is situated in the prestigious business centre of Rubin Plaza in Minsk, Belarus. Belarus is recognised by Gartner as being a leading location for technology talent, as well as home to the winners of the previous four Google Hashcode and CodeJam hackathons, Minsk is renowned around the globe as being a talent capital for software development expertise. Having been based in Belarus since 2002, Godel has an unrivaled network in BY and is highly regarded by the Belarusian government’s High Tech Park, Universities and tech community.",
+    "image": "/img/minsk.png",
+    "officeImage": "/img/minsk-office.png",
+    "map": {
+      "latitude": 53.890794,
+      "longitude": 27.52584,
+      "zoom": 13
+    }
+  },
+  "london": {
+    "city": "London",
+    "address": "18 King William Street",
+    "index": "EC4N 7BP",
+    "tel": "0207 099 8100",
+    "text":
+      "London continues to experience a tech community boom with the rise of FinTech businesses in the capital and the ever-growing technology community dubbed Silicon Roundabout – named after America’s famous Silicon Valley.",
+    "image": "/img/london.png",
+    "officeImage": "/img/london-office.png",
+    "map": {
+      "latitude": 51.511252,
+      "longitude": -0.087319,
+      "zoom": 13
+    }
+  },
+  "manchester": {
+    "city": "Manchester",
+    "address": "27th Floor, City Tower, Piccadilly Plaza,",
+    "index": "M1 4BT",
+    "tel": "0161 219 8100",
+    "text":
+      "Our head office is in the centre of Manchester. A city where the tech scene is thriving thanks to a wealth of tech communities, supported by strong networks, support and endless inspiration. Alan Turing OBE, the creator of modern computing is one example of Manchester’s rich technical heritage, the city is home to many more entrepreneurs and some of the countries most successful technology companies.",
+    "image": "/img/manchester.png",
+    "officeImage": "/img/manchester-office.png",
+    "map": {
+      "latitude": 53.4803297,
+      "longitude": -2.2387491,
+      "zoom": 13
+    }
+  },
+  "grodno": {
+    "city": "Grodno",
+    "address": "Vulica Lienina 5",
+    "index": "220089",
+    "tel": "+44612198100",
+    "text":
+      "Godel's newest office location can be found in Grodno. Having fun and delivering the very best service are the founding principles of Godel. We’re always on the lookout for talented and creative people who are willing to go above and beyond the call of duty for their team mates and our clients.",
+    "image": "/img/grodno.png",
+    "officeImage": "/img/grodno-office.png",
+    "map": {
+      "latitude": 53.681016,
+      "longitude": 23.84059,
+      "zoom": 13
+    }
+  },
+  "brest": {
+    "city": "Brest",
+    "address": "Moskovskaya str. 208-413",
+    "index": "224000",
+    "tel": "+375 44 577 0463",
+    "text":
+      "Godel has a development centre in Brest, Belarus which is a country recognised by Gartner as being a leading location for technology talent, as well as home to the winners of the previous four Google Hashcode and CodeJam hackathons. Brest is a city that is widely recognised for its thriving technical industry.",
+    "image": "/img/brest.png",
+    "officeImage": "/img/brest-office.png",
+    "map": {
+      "latitude": 52.092972,
+      "longitude": 23.761646,
+      "zoom": 13
+    }
+  }
+}

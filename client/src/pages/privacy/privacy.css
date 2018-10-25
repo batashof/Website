@@ -1,0 +1,86 @@
+.Privacy {
+  padding-top: 163px;
+  padding-bottom: 50px;
+  color: #3c4a61;
+}
+
+.Privacy__title {
+  margin-top: 0;
+  margin-bottom: 20px;
+  font-size: 42px;
+  line-height: 1.24;
+  font-weight: 400;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+.Privacy__text,
+.Privacy__list-item {
+  text-align: left;
+  font-size: 24px;
+  line-height: 1.3em;
+  letter-spacing: 0.6px;
+  margin-bottom: 15px;
+  margin-top: 0;
+  font-weight: 200;
+}
+
+.Privacy__text_centered {
+  text-align: center;
+  margin-bottom: 45px;
+}
+
+.Privacy__text_bold {
+  font-weight: 500;
+}
+
+.Privacy__link {
+  color: inherit;
+}
+
+.Privacy__subtitle {
+  margin-top: 30px;
+  margin-bottom: 10px;
+  font-size: 30px;
+  line-height: 1.24;
+  font-weight: 400;
+  text-align: left;
+}
+
+.Privacy__point {
+  text-align: left;
+  font-size: 24px;
+  line-height: 1.3em;
+  letter-spacing: 0.6px;
+  margin-bottom: 15px;
+  margin-top: 0;
+  font-weight: 500;
+}
+
+@media only screen and (max-width: 1024px) {
+  .Privacy__text,
+  .Privacy__point,
+  .Privacy__list-item {
+    font-size: 16px;
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  .Privacy__title {
+    font-size: 36px;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .Privacy {
+    padding-top: 83px;
+  }
+
+  .Privacy__title {
+    font-size: 24px;
+  }
+
+  .Privacy__text_centered {
+    margin-bottom: 35px;
+  }
+}

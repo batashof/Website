@@ -1,0 +1,37 @@
+.JobsFilter {
+  display: inline-block;
+  color: #fff;
+  font-size: 20px;
+  position: relative;
+}
+.JobsFilter__parameters {
+  border-bottom: 2px dotted #75c8d2;
+  cursor: pointer;
+  position: relative;
+  display: inline-block;
+}
+.JobsFilter__dropdown {
+  margin: 0;
+  padding: 15px;
+  position: absolute;
+  height: auto;
+  top: 100%;
+  z-index: 9;
+  background: #3c4a61;
+  display: none;
+}
+.JobsFilter__parameters_active + .JobsFilter__dropdown {
+  display: block;
+}
+.JobsFilter__item {
+  list-style: none;
+  padding: 5px 0;
+  white-space: nowrap;
+  cursor: pointer;
+}
+
+@media only screen and (min-width: 1025px) {
+  .JobsFilter__item:hover {
+    color: #8dc63f;
+  }
+}

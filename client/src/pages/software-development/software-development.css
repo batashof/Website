@@ -1,0 +1,8 @@
+  .Section_bg-picture_scrum .Layout__side {
+    background-image: url("img/desc.png");
+    order: -1;
+  }
+  .Section_bg-picture_ability .Layout__side {
+    background-image: url("img/concat-code.png");
+    order: 1;
+  }

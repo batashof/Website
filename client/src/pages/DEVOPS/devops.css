@@ -1,0 +1,8 @@
+  .Section_bg-picture_benefits .Layout__side {
+    background-image: url("img/team.jpg");
+    order: -1;
+  }
+  .Section_bg-picture_team-collaboration .Layout__side {
+    background-image: url("img/team-collaboration.png");
+    order: 1;
+  }

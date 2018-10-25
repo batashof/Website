@@ -1,0 +1,233 @@
+.Circle {
+  border: 2px solid #3c4a61;
+  color: #3c4a61;
+  background-color: #fff;
+  border-radius: 100%;
+  box-sizing: border-box;
+  text-decoration: none;
+  text-transform: uppercase;
+  font: 400 18px/1 "FlamaSemicondensed", sans-serif;
+  transition: 0.15s;
+  text-align: center;
+  transform: scale(1);
+  transition: 0.5s;
+  display: block;
+  margin: auto;
+}
+.Circle:before {
+  content: "";
+  display: block;
+  transition: inherit;
+  position: absolute;
+  z-index: 9;
+  top: 15%;
+  left: 50%;
+  transform: translateX(-50%);
+  transition: 0.5s;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.Circle:after {
+  content: "";
+  border-top: 4px solid transparent;
+  border-right: 4px solid transparent;
+  border-radius: 4px 0 4px;
+  display: block;
+  width: 20px;
+  height: 20px;
+  transition: inherit;
+  position: absolute;
+  bottom: 40px;
+  left: 50%;
+  transform: translateX(-50%) rotate(45deg);
+  z-index: 9;
+}
+.Circle_size_s {
+  width: 200px;
+  height: 200px;
+  color: transparent;
+  padding-top: 110px;
+}
+.Circle_size_s:before {
+  top: 50%;
+  transform: translate(-50%, -50%);
+  height: 65px;
+  width: 120px;
+}
+.Circle_size_s:after {
+  opacity: 0;
+}
+.Circle_size_m {
+  width: 240px;
+  height: 240px;
+  padding: 135px 0 0;
+}
+.Circle_size_m:before {
+  width: 90px;
+  height: 70px;
+}
+.Circle_active {
+  width: 200px;
+  height: 200px;
+  font-size: 14px;
+  padding: 115px 0 0;
+  transform: scale(1.4);
+  color: #fff;
+}
+.Circle_active:before {
+  width: 90px;
+  height: 70px;
+}
+.Circle_active.Circle:after {
+  border-color: #fff;
+  bottom: 20px;
+}
+.Circle_color_aqua,
+.Circle_color_aqua:after {
+  border-color: #75c8d2;
+}
+.Circle_color_red,
+.Circle_color_red:after {
+  border-color: #e45062;
+}
+.Circle_color_violet,
+.Circle_color_violet:after {
+  border-color: #af90cb;
+}
+.Circle_color_green,
+.Circle_color_green:after {
+  border-color: #8dc63f;
+}
+.Circle_icon_team-augmentation:before {
+  background-image: url("circle-icons/team-augmentation.png");
+}
+.Circle_icon_dedicated-teams:before {
+  background-image: url("circle-icons/dedicated-teams.png");
+}
+.Circle_icon_product-development:before {
+  background-image: url("circle-icons/product-development.png");
+}
+.Circle_icon_project-based:before {
+  background-image: url("circle-icons/project-based.png");
+}
+.Circle_icon_meet-our-leaders:before {
+  background-image: url("circle-icons/meet-our-leaders.png");
+}
+.Circle_icon_our-skills:before {
+  background-image: url("circle-icons/our-skills.png");
+}
+.Circle_icon_godel-dna:before {
+  background-image: url("circle-icons/godel-dna.png");
+}
+
+@media only screen and (min-width: 1025px) {
+  .Circle:hover {
+    color: #fff;
+    cursor: pointer;
+  }
+  .Circle:hover.Circle:after {
+    border-color: #fff;
+  }
+  .Circle_size_s:hover {
+    transform: scale(1.4);
+    font-size: 17px;
+  }
+  .Circle_size_s:hover.Circle_size_s:before {
+    transform: translate(-50%, 0);
+    top: 15%;
+  }
+  .Circle_size_s:hover.Circle_size_s:after {
+    opacity: 1;
+    bottom: 20px;
+  }
+  .Circle_color_aqua:hover,
+  .Circle_active.Circle_color_aqua {
+    background-color: #75c8d2;
+  }
+  .Circle_color_red:hover,
+  .Circle_active.Circle_color_red {
+    background-color: #e45062;
+  }
+  .Circle_color_violet:hover,
+  .Circle_active.Circle_color_violet {
+    background-color: #af90cb;
+  }
+  .Circle_color_green:hover,
+  .Circle_active.Circle_color_green {
+    background-color: #8dc63f;
+  }
+  .Circle:hover.Circle_icon_team-augmentation:before,
+  .Circle_active.Circle_icon_team-augmentation:before {
+    background-image: url("circle-icons/team-augmentation_hover.png");
+  }
+  .Circle:hover.Circle_icon_dedicated-teams:before,
+  .Circle_active.Circle_icon_dedicated-teams:before {
+    background-image: url("circle-icons/dedicated-teams_hover.png");
+  }
+  .Circle:hover.Circle_icon_product-development:before,
+  .Circle_active.Circle_icon_product-development:before {
+    background-image: url("circle-icons/product-development_hover.png");
+  }
+  .Circle:hover.Circle_icon_project-based:before,
+  .Circle_active.Circle_icon_project-based:before {
+    background-image: url("circle-icons/project-based_hover.png");
+  }
+  .Circle:hover.Circle_icon_meet-our-leaders:before,
+  .Circle_active.Circle_icon_meet-our-leaders:before {
+    background-image: url("circle-icons/meet-our-leaders_hover.png");
+  }
+  .Circle:hover.Circle_icon_godel-dna:before,
+  .Circle_active.Circle_icon_godel-dna:before {
+    background-image: url("circle-icons/godel-dna_hover.png");
+  }
+  .Circle:hover.Circle_icon_our-skills:before,
+  .Circle_active.Circle_icon_our-skills:before {
+    background-image: url("circle-icons/our-skills_hover.png");
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  .Circle {
+    color: #3c4a61;
+  }
+  .Circle_size_m,
+  .Circle_size_s,
+  .Circle_active:after {
+    width: 175px;
+    height: 175px;
+    padding: 100px 0 0;
+    font-size: 14px;
+    transform: scale(1);
+  }
+  .Circle_size_m:before,
+  .Circle_size_s:before,
+  .Circle_active:before {
+    width: 75px;
+    height: 55px;
+    top: 15%;
+    transform: translate(-50%);
+  }
+  .Circle_size_m:after,
+  .Circle_size_s:after,
+  .Circle_active:after {
+    bottom: 20px;
+    height: 17px;
+    width: 17px;
+    opacity: 1;
+    transform: rotate(45deg) translate(-50%,50%);
+    padding: 0;
+  }
+  .Circle_color_aqua.Circle_active:after {
+    border-color: #75c8d2;
+  }
+  .Circle_color_red.Circle_active:after {
+    border-color: #e45062;
+  }
+  .Circle_color_violet.Circle_active:after {
+    border-color: #af90cb;
+  }
+  .Circle_color_green.Circle_active:after {
+    border-color: #8dc63f;
+  }
+}

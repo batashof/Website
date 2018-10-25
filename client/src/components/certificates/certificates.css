@@ -1,0 +1,16 @@
+.certificates-carousel {
+  padding-top: 64px;
+  padding-bottom: 73px;
+}
+
+.certificates-carousel .Carousel__slide {
+  min-height: 80px;
+}
+.certificates-carousel .Carousel__slide img {
+  display: inline-block;
+  width: auto;
+}
+
+.certificates-carousel .Carousel__btn {
+  top: 0;
+}

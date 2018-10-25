@@ -1,0 +1,7 @@
+.Section_bg-picture_collaboration .Layout__side {
+  background-image: url("img/Team-collaboration.png");
+}
+
+.Section_bg-picture_code .Layout__side {
+  background-image: url("img/code.png");
+}

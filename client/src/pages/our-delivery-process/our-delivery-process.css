@@ -1,0 +1,12 @@
+  .Section_bg-picture_tables .Layout__side {
+    background-image: url("img/tables.jpg");
+  }
+  .Section_bg-picture_team .Layout__side {
+    background-image: url("img/team.jpg");
+  }
+  .Section_bg-picture_team .Layout__wrap .Layout__side {
+    order: 1;
+  }
+  .Section_bg-picture_man .Layout__side {
+    background-image: url("img/man.jpg");
+  }

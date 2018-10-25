@@ -1,0 +1,8 @@
+  .Section_bg-picture_quality .Layout__side {
+    background-image: url("img/hr.jpg");
+    order: -1;
+  }
+  .Section_bg-picture_methodology .Layout__side {
+    background-image: url("img/developer.png");
+    order: 1;
+  }

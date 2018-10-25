@@ -1,0 +1,143 @@
+.List,
+.List_layout_vertical {
+  margin: 0;
+  list-style: none;
+  padding: 0;
+}
+
+.List_layout_horisontal {
+  display: flex;
+  justify-content: space-between;
+}
+
+.List_layout_horisontal-centred {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.List_layout_horisontal-centred .List__item {
+  margin-bottom: 30px;
+}
+
+.List_layout_horisontal-centred .List__item:not(:last-child) {
+  margin-right: 30px;
+}
+
+.List_layout_horisontal .List__item {
+  position: relative;
+}
+
+.List_layout_vertical-centered {
+  text-align: center;
+}
+
+.List_layout_vertical-with-bullets .List__item {
+  position: relative;
+  padding-left: 15px;
+  padding-bottom: 0;
+}
+
+.List_layout_vertical-with-bullets .List__item::before {
+  content: "";
+  position: absolute;
+  left: 4px;
+  top: 38%;
+  border: 4px solid transparent;
+  border-left: 7px solid #8dc63f;
+}
+
+.List_layout_vertical-with-bullets-and-icons .List__item {
+  position: relative;
+  padding-left: 45px;
+}
+
+.List_layout_vertical-with-bullets-and-icons .List__item:before {
+  position: absolute;
+  left: 25px;
+  top: 14px;
+  content: "";
+  width: 9px;
+  height: 9px;
+  border-top: 1px solid #8dc63f;
+  border-right: 1px solid #8dc63f;
+  transform: rotate(45deg);
+}
+
+.List_layout_vertical-with-bullets-and-icons .List__icon {
+  position: absolute;
+  left: 0;
+  top: 9px;
+  fill: #fff;
+}
+
+.List_layout_vertical-with-bullets-and-icons .List__item:hover .List__icon {
+  fill: #68c9d0;
+}
+
+.List_layout_with-grid {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.List_layout_with-grid-and-border {
+  display: flex;
+  flex-wrap: wrap;
+  border-top: 1px solid #d6dbdc;
+  border-left: 1px solid #d6dbdc;
+}
+
+.List_layout_with-grid-and-border .List__item {
+  width: 25%;
+}
+
+.List_layout_with-grid-and-border-x5 {
+  display: flex;
+  flex-wrap: wrap;
+  border-top: 1px solid #d6dbdc;
+  border-left: 1px solid #d6dbdc;
+}
+
+.List_layout_with-grid-and-border-x5 .List__item {
+  width: 20%;
+}
+@media only screen and (max-width: 980px) {
+  .List_layout_with-grid-and-border-x5 .List__item {
+    width: 33.33%;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .List_layout_horisontal {
+    flex-direction: column;
+  }
+  .List_layout_with-grid-and-border .List__item {
+    width: 50%;
+  }
+  .List_layout_with-grid-and-border-x5 .List__item {
+    width: 50%;
+  }
+  .List_layout_vertical-with-bullets-and-icons .List__item:before {
+    top: 9px;
+  }
+  .List_layout_vertical-with-bullets-and-icons .List__icon {
+    top: 4px;
+  }
+  .List_layout_vertical-with-bullets-and-icons .List__item:hover .List__icon {
+    fill: #fff;
+  }
+  .List_layout_vertical-with-bullets .List__item {
+    padding-left: 0;
+  }
+
+  .List_layout_vertical-with-bullets .List__item:before {
+    display: none;
+  }
+
+  .List_layout_horisontal-centred {
+    display: block;
+  }
+  .List_layout_horisontal-centred .List__item {
+    margin-right: 0;
+  }
+}

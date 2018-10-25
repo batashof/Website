@@ -1,0 +1,71 @@
+.TechnologiesList {
+  padding: 0 20px;
+  background-color: #75c8d2;
+  position: relative;
+  color: #344b61;
+}
+.TechnologiesList:before,
+.TechnologiesList:after {
+  width: 240px;
+  height: 320px;
+  content: "";
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: block;
+  position: absolute;
+  top: 0;
+}
+.TechnologiesList:after {
+  background-image: url("img/people_dots_bg_right.png");
+  right: 0;
+  transform: translateY(-50%);
+}
+.TechnologiesList:before {
+  background-image: url("img/people_dots_bg_left.png");
+  left: 0;
+  transform: translateY(-50%);
+}
+.TechnologiesList__wrap {
+  width: 100%;
+  max-width: 1220px;
+  padding-right: 20px;
+  margin: auto;
+  column-count: 2;
+  column-gap: 75px;
+  padding: 75px 80px 50px;
+  background-color: #fff;
+  border-bottom: 9px solid #e45062;
+  box-sizing: border-box;
+}
+.TechnologiesList h3 {
+  font-weight: 600;
+  margin: 0;
+  text-align: center;
+}
+.TechnologiesList p {
+  margin-top: 0;
+  text-align: center;
+}
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  .TechnologiesList {
+    column-gap: 30px;
+  }
+  .TechnologiesList:before,
+  .TechnologiesList:after {
+    display: none;
+  }
+  .TechnologiesList__wrap {
+    padding: 55px 40px 30px;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .TechnologiesList:before,
+  .TechnologiesList:after {
+    display: none;
+  }
+  .TechnologiesList__wrap {
+    padding: 35px 20px 10px;
+    column-count: 1;
+  }
+}

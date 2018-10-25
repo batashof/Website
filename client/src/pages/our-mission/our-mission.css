@@ -1,0 +1,18 @@
+.OurMission-img {
+  height: 290px;
+}
+.OurMission-description {
+  text-transform: uppercase;
+  max-width: 400px;
+  font-size: 18px;
+  font-weight: 400;
+  margin: auto;
+  margin-top: 15px;
+  padding: 0 20px;
+}
+.Section_bg-picture_trust .Layout__side {
+  background-image: url("img/we.png");
+}
+.Section_bg-picture_desc .Layout__side {
+  background-image: url("img/desc.png");
+}

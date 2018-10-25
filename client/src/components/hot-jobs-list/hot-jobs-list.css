@@ -1,0 +1,260 @@
+.HotJobsList {
+  padding-top: 48px;
+  padding-bottom: 72px;
+  background: #3c4a61;
+}
+
+.HotJobsList__wrap {
+  position: relative;
+  width: 100%;
+  max-width: 1220px;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin: 0 auto;
+  display: flex;
+  box-sizing: border-box;
+}
+
+.HotJobsList__wrap:before {
+  content: "";
+  display: block;
+  height: 1px;
+  width: calc(100% - 40px);
+  margin-left: 20px;
+  margin-right: auto;
+  position: absolute;
+  top: 42%;
+  left: 0;
+  background: #8dc63f;
+}
+
+.HotJobsList__btn {
+  display: block;
+  box-sizing: border-box;
+  width: 220px;
+  height: 250px;
+  padding: 30px 25px;
+  text-align: center;
+  background: #8dc63f;
+  text-decoration: none;
+  margin-right: 20px;
+}
+
+.HotJobsList__btn-title {
+  display: block;
+  margin-bottom: 15px;
+  font-size: 24px;
+  line-height: 30px;
+  font-weight: 500;
+  letter-spacing: 0.7px;
+  color: #fff;
+  text-transform: uppercase;
+}
+
+.HotJobsList__btn-text {
+  display: block;
+  line-height: 22px;
+  font-weight: 400;
+  color: #fff;
+}
+
+.HotJobsList__btn-icon {
+  height: 20px;
+  width: 20px;
+  margin-top: 15px;
+  fill: #fff;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.HotJobsList .Carousel {
+  box-sizing: border-box;
+  margin-left: 0;
+  margin-right: 0;
+  width: calc(125%);
+}
+
+.HotJobsList .Carousel__slick {
+  max-width: 100%;
+}
+
+.HotJobsList__carousel {
+  position: relative;
+  width: calc(100% - 220px);
+  overflow: hidden;
+  height: 300px;
+}
+
+.HotJobsList .Carousel .Carousel__slide:last-child {
+  filter: brightness(0.8);
+}
+
+.HotJobsList .Carousel__btn {
+  top: 110%;
+  height: 25px;
+  margin: 0;
+  left: 33%;
+}
+
+.HotJobsList .Carousel__btn_direction_left {
+  margin-left: -8px;
+}
+
+.HotJobsList .Carousel__btn_direction_right {
+  margin-left: 8px;
+}
+
+.HotJobsList .Carousel__btn .Button__arrow {
+  stroke: #8dc63f;
+}
+
+.HotJobsList .Carousel__btn:hover .Button__arrow {
+  stroke: #fff;
+}
+
+.HotJobsList__card {
+  margin-left: 10px;
+  margin-right: 10px;
+  height: 250px;
+  box-sizing: border-box;
+  background-color: #f4f4f4;
+  padding: 26px 30px 20px;
+  text-align: left;
+}
+
+.HotJobsList__position {
+  font-size: 18px;
+  line-height: 1.1;
+  font-weight: 500;
+  text-transform: uppercase;
+  margin-bottom: 6px;
+  margin-top: 0;
+  color: #3c4a61;
+}
+
+.HotJobsList__location {
+  display: block;
+  font-size: 16px;
+  margin-bottom: 6px;
+  line-height: 20px;
+  font-weight: 400;
+  line-height: 1.25;
+  color: #75c8d2;
+}
+
+.HotJobsList__spoiler {
+  margin-bottom: 12px;
+  margin-top: 0;
+  font-size: 14px;
+  line-height: 1.3;
+  color: #3c4a61;
+}
+
+.HotJobsList__card .Button {
+  display: inline-block;
+  font-size: 16px;
+  line-height: 1.3;
+  font-weight: 400;
+  color: #8dc63f;
+  transition: color 0.15s linear;
+}
+
+.HotJobsList__card .Button:hover {
+  color: #3c4a61;
+}
+
+.HotJobsList__card .Button:hover .Button__arrow {
+  stroke: #3c4a61;
+}
+
+.HotJobsList__card .Button .Button__arrow {
+  width: 10px;
+  height: 14px;
+  stroke: #8dc63f;
+  right: -15px;
+  top: 2px;
+}
+
+@media only screen and (max-width: 981px) {
+  .HotJobsList {
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+
+  .HotJobsList__wrap {
+    display: block;
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .HotJobsList__wrap:before {
+    display: none;
+  }
+
+  .HotJobsList__btn {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+    height: auto;
+    padding-bottom: 100px;
+  }
+
+  .HotJobsList__btn-title {
+    margin-right: 15px;
+    margin-bottom: 0;
+  }
+
+  .HotJobsList__btn-icon {
+    margin-left: 0;
+    margin-right: 0;
+    margin-top: 0;
+  }
+
+  .HotJobsList__carousel {
+    width: 100%;
+    max-width: 980px;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin: 0 auto;
+    box-sizing: border-box;
+    padding-top: 30px;
+  }
+
+  .HotJobsList .Carousel {
+    width: 100%;
+  }
+
+  .HotJobsList .Carousel__slick {
+    max-width: 90%;
+  }
+
+  .HotJobsList .Carousel__btn {
+    top: calc(50% - 20px);
+    height: 25px;
+    margin: 0;
+  }
+
+  .HotJobsList .Carousel__btn_direction_left {
+    left: 0;
+  }
+
+  .HotJobsList .Carousel__btn_direction_right {
+    left: calc(100% - 10px);
+  }
+
+  .HotJobsList .Carousel .Carousel__slide:last-child {
+    filter: none;
+  }
+}
+
+@media only screen and (max-width: 481px) {
+  .HotJobsList__carousel {
+    height: 300px;
+  }
+
+  .HotJobsList__card {
+    height: 250px;
+  }
+}

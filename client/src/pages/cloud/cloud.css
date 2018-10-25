@@ -1,0 +1,8 @@
+  .Section_bg-picture_microservices .Layout__side {
+    background-image: url("img/cloud.jpg");
+    order: -1;
+  }
+  .Section_bg-picture_experian .Layout__side {
+    background-image: url("img/business.jpg");
+    order: 1;
+  }

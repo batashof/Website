@@ -1,0 +1,31 @@
+.Logo_with-text {
+  max-width: 227px;
+  padding-bottom: 31px;
+}
+
+.Logo_size_l {
+  position: absolute;
+  top: -69px;
+  left: 50%;
+  margin-left: -69px;
+  width: 137px;
+  height: 137px;
+}
+
+@media only screen and (max-width: 1024px) {
+  .Logo_with-text {
+    max-width: 150px;
+  }
+  .Logo_size_l {
+    width: 100px;
+    height: 100px;
+    top: -50px;
+    margin-left: -50px;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .Logo_with-text {
+    padding-bottom: 0;
+  }
+}

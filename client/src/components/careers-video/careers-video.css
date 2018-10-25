@@ -1,0 +1,267 @@
+.CareersVideo {
+  margin-top: 113px;
+  height: 650px;
+  min-height: 450px;
+  box-sizing: border-box;
+  color: #fff;
+  font-size: 20px;
+  position: relative;
+  overflow: hidden;
+  background-image: url("/img/Godel-Devs-in-the-City.png");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.CareersVideo__wrap {
+  display: flex;
+  height: 100%;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+  max-width: 1220px;
+  padding: 0 20px;
+  margin: 0 auto;
+  box-sizing: border-box;
+  position: relative;
+  z-index: 1;
+}
+.CareersVideo__wrap_hidden {
+  display: none;
+}
+.CareersVideo__title {
+  max-width: 60%;
+  margin: 0 0 20px;
+  font-size: 50px;
+  line-height: 52px;
+  font-weight: 400;
+  letter-spacing: 1.3px;
+  word-spacing: 3.4px;
+  color: #fff;
+}
+.CareersVideo__title_bold {
+  font-weight: 600;
+  margin: 0 10px;
+}
+.CareersVideo__vacancies {
+  color: #75c8d2;
+  display: flex;
+  flex-direction: column;
+}
+.CareersVideo__departments {
+  display: block;
+  margin-top: 5px;
+  margin-bottom: 35px;
+}
+.CareersVideo__departments-link {
+  font-weight: 400;
+  text-decoration: none;
+  color: #fff;
+  transition: 0.15s;
+}
+.CareersVideo__departments-symbol {
+  margin: 0 5px;
+  color: #8dc63f;
+}
+.CareersVideo__form {
+  display: flex;
+}
+.CareersVideo__form .Button {
+  width: 50px;
+  height: 55px;
+  margin: 0;
+}
+.CareersVideo__form .Button .Button__arrow {
+  position: relative;
+  right: 10%;
+  width: 50px;
+  height: 25px;
+  margin: 0;
+  transform: translateY(-50%);
+}
+.CareersVideo__arrow {
+  width: 46px;
+  height: 46px;
+  fill: #fff;
+  cursor: pointer;
+  transition: 0.15s;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 50px;
+}
+.CareersVideo__button {
+  height: 60px;
+  display: flex;
+  justify-content: flex-end;
+  line-height: 60px;
+  border-color: #75c8d2;
+  border: 1px solid #75c8d2;
+  width: auto;
+  box-sizing: border-box;
+  transition: 0.15s;
+  position: absolute;
+  bottom: 45px;
+  right: 45px;
+  z-index: 1;
+}
+.CareersVideo__button-text {
+  padding: 0 25px;
+}
+.CareersVideo__button .Button {
+  display: inline-block;
+  margin: 0;
+  height: 100%;
+  line-height: 60px;
+  width: 60px;
+  padding-left: 10px;
+}
+.CareersVideo__button .Button svg {
+  width: 18px;
+}
+.CareersVideo__video {
+  position: absolute;
+  width: 125vw;
+  min-height: 100%;
+  height: 57vw;
+  z-index: 0;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.CareersVideo__close-video {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  font-size: 20px;
+  font-weight: 400;
+  cursor: pointer;
+  color: #fff;
+  background-color: #8dc63f;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  line-height: 20px;
+  z-index: 1;
+  text-align: center;
+  display: none;
+}
+.CareersVideo_playing .CareersVideo__video {
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  transform: translate(0, 0);
+  display: block;
+}
+.CareersVideo_playing .CareersVideo__close-video {
+  display: block;
+}
+.CareersVideo_playing .CareersVideo__button {
+  display: none;
+}
+
+@media only screen and (min-width: 981px) {
+  .CareersVideo__departments-link:hover {
+    color: #8dc63f;
+  }
+  .CareersVideo__arrow:hover {
+    fill: #8dc63f;
+  }
+  .CareersVideo__button:hover {
+    border-color: #8dc63f;
+    cursor: pointer;
+  }
+  .CareersVideo__button:hover .Button {
+    background-color: #8dc63f;
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 980px) {
+  .CareersVideo {
+    height: 400px;
+  }
+  .CareersVideo__video {
+    display: none;
+  }
+  .CareersVideo__wrap {
+    text-align: center;
+    padding: 45px 20px 65px;
+  }
+  .CareersVideo__title {
+    max-width: 100%;
+    margin: 0 0 30px;
+    font-size: 30px;
+    line-height: 36px;
+    color: #e45062;
+  }
+  .CareersVideo__vacancies {
+    order: 2;
+    margin: 30px 0 0;
+  }
+  .CareersVideo__form {
+    order: 1;
+    justify-content: center;
+  }
+  .CareersVideo__arrow {
+    display: none;
+  }
+  .CareersVideo__button {
+    height: 40px;
+    line-height: 40px;
+    font-size: 18px;
+    right: 20px;
+    bottom: 20px;
+    width: 195px;
+  }
+  .CareersVideo__button .Button {
+    line-height: 39px;
+    width: 40px;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .CareersVideo {
+    height: auto;
+    min-height: 320px;
+  }
+  .CareersVideo__video {
+    display: none;
+  }
+  .CareersVideo__wrap {
+    text-align: center;
+    padding: 40px 20px 40px;
+  }
+  .CareersVideo__title {
+    max-width: 100%;
+    margin: 0 0 30px;
+    font-size: 28px;
+    letter-spacing: 0.6px;
+    word-spacing: 0.2px;
+    line-height: 1.41;
+    color: #e45062;
+  }
+  .CareersVideo__vacancies {
+    display: none;
+  }
+  .CareersVideo__form {
+    order: 1;
+    justify-content: center;
+  }
+  .CareersVideo__arrow {
+    display: none;
+  }
+  .CareersVideo__button {
+    order: 2;
+    height: 40px;
+    line-height: 40px;
+    font-size: 18px;
+    position: relative;
+    bottom: 0;
+    right: 0;
+    margin: 0 auto 40px;
+    width: 195px;
+  }
+  .CareersVideo__button .Button {
+    line-height: 39px;
+    width: 40px;
+  }
+}

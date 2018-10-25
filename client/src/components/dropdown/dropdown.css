@@ -1,0 +1,166 @@
+.Dropdown {
+  box-sizing: border-box;
+  position: absolute;
+  top: 100%;
+  background: #3c4a61;
+  z-index: 30;
+  display: none;
+}
+
+.Dropdown_state_open {
+  display: block;
+}
+
+.Dropdown .List__item {
+  cursor: pointer;
+}
+
+.Dropdown_size_xs {
+  min-width: 180px;
+  margin-left: -90px;
+}
+
+.Dropdown_size_s,
+.Dropdown_size_xs {
+  left: 50%;
+  padding: 30px;
+}
+
+.Dropdown_size_s {
+  min-width: 240px;
+  margin-left: -120px;
+}
+
+.Dropdown_size_m {
+  min-width: 550px;
+  left: 0;
+  padding: 30px;
+}
+
+.Dropdown_size_m .List__item:nth-child(odd) {
+  width: 50%;
+  border-right: 1px solid #fff;
+}
+
+.Dropdown_size_m .List__item {
+  box-sizing: border-box;
+  float: left;
+}
+
+.Dropdown_size_m .List__item:nth-child(even) {
+  width: 45%;
+  margin-left: 5%;
+}
+
+.Dropdown_size_s .List__item a,
+.Dropdown_size_xs .List__item a,
+.Dropdown_size_m .List__item a,
+.Dropdown_size_l .List__item a,
+.Dropdown_size_xl .List__item a {
+  color: #fff;
+  font-weight: 200;
+  text-transform: uppercase;
+  font-family: FlamaSemicondensed, Arial, san-serif;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+.Dropdown_size_xs .List__item:hover a,
+.Dropdown_size_s .List__item:hover a,
+.Dropdown_size_m .List__item:hover a,
+.Dropdown_size_l .List_layout_vertical-with-bullets .List__item:hover a,
+.Dropdown_size_xl .List_layout_vertical-with-bullets .List__item:hover a {
+  color: #75c8d2;
+}
+.Dropdown_size_l {
+  min-width: 660px;
+  padding: 49px 30px 49px 59px;
+}
+
+.Dropdown_size_l .List_layout_vertical {
+  width: 58%;
+  float: left;
+}
+
+.Dropdown_size_l .List_layout_vertical .List__item {
+  border-right: 1px solid #6b7587;
+}
+
+.Dropdown_size_l .List_layout_vertical-with-bullets {
+  width: 33%;
+  margin-left: 50px;
+  float: left;
+}
+
+.Dropdown_size_xl {
+  min-width: 360px;
+  padding: 29px 20px 19px 49px;
+}
+
+.Dropdown_size_xl .List_layout_vertical {
+  width: 58%;
+  float: left;
+}
+
+.Dropdown_size_xl .List_layout_vertical .List__item {
+  border-right: 1px solid #6b7587;
+}
+
+.Dropdown_size_xl .List_layout_vertical-with-bullets {
+  width: 50%;
+  float: left;
+}
+
+@media only screen and (min-width: 1025px) {
+  .Dropdown .List__item a {
+    transition: color 0.15s linear;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .Dropdown {
+    display: block;
+    width: 100%;
+    min-height: 100%;
+    left: 100%;
+    top: 0;
+    margin: 0;
+    padding: 30px;
+    transition: left 0.3s linear;
+  }
+
+  .Dropdown_state_open {
+    left: 0;
+  }
+
+  .Dropdown .Button {
+    margin-top: 20px;
+  }
+
+  .Dropdown .Button__arrow {
+    height: 20px;
+    stroke: #fff;
+  }
+
+  .Dropdown .List {
+    margin-left: 0;
+    float: none;
+    width: 100%;
+    position: static;
+  }
+
+  .Dropdown .List .List__item {
+    margin-left: 0;
+    float: none;
+    border: none;
+    width: 100%;
+  }
+
+  .Dropdown .List .List__item a {
+    font-size: 16px;
+  }
+
+  .Dropdown .List .List__item:hover a {
+    color: #fff;
+  }
+}

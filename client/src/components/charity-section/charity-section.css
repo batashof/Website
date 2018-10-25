@@ -1,0 +1,73 @@
+.about-us-charity {
+  padding-top: 80px;
+  text-decoration: none;
+}
+.about-us-charity__wrap {
+  box-sizing: border-box;
+  width: 100%;
+  max-width: 1220px;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin: 0 auto;
+}
+.about-us-charity__link {
+  display: flex;
+  text-decoration: none;
+}
+.about-us-charity__img {
+  background: url("/img/charity-bg.png") no-repeat;
+  background-size: cover;
+  width: 50%;
+}
+.about-us-charity__title {
+  font-size: 30px;
+  font-weight: 400;
+  letter-spacing: 0.8px;
+  text-transform: uppercase;
+  color: #fff;
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+.about-us-charity__text {
+  width: 50%;
+  box-sizing: border-box;
+  padding: 57px 52px;
+  font-size: 16px;
+  font-weight: 200;
+  line-height: 1.45;
+  color: #fff;
+  margin-top: 0;
+  background-color: #3c4a61;
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  .about-us-charity {
+    padding-top: 40px;
+  }
+  .about-us-charity__text {
+    font-size: 16px;
+    padding: 30px;
+  }
+  .about-us-charity__title {
+    font-size: 24px;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .about-us-charity {
+    padding-top: 20px;
+  }
+  .about-us-charity__link {
+    flex-direction: column;
+  }
+  .about-us-charity__title {
+    font-size: 20px;
+  }
+  .about-us-charity__text {
+    width: 100%;
+    padding: 20px;
+  }
+  .about-us-charity__img {
+    padding-top: 66%;
+    width: 100%;
+  }
+}

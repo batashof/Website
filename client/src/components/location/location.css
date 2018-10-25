@@ -1,0 +1,105 @@
+.Location {
+  text-align: center;
+  display: block;
+  text-decoration: none;
+  font: 200 16px/1 "FlamaSemicondensed", sans-serif;
+  margin: auto;
+}
+.Location__text {
+  font-size: 20px;
+  line-height: 1.11;
+  letter-spacing: 0;
+  color: #8dc63f;
+  transition: color 0.15s linear;
+  vertical-align: middle;
+}
+.Location__arrow {
+  height: 15px;
+  stroke: #8dc63f;
+  margin-left: 15px;
+  transition: 0.15s;
+  vertical-align: middle;
+}
+.Location__address {
+  line-height: 30px;
+  margin-bottom: 23px;
+  color: #3c4a61;
+  font-size: 18px;
+  font-style: normal;
+}
+
+.Location__span {
+  max-width: 170px;
+  display: block;
+  margin: auto;
+}
+
+.Location__title {
+  margin: 0 0 24px 0;
+  font-size: 46px;
+  line-height: 1.5;
+  color: #75c8d2;
+  letter-spacing: 1.9px;
+  border-bottom: 1px solid #3c4a61;
+  text-transform: uppercase;
+  transition: color 0.15s linear;
+  font-weight: 400;
+}
+.Location:hover {
+  cursor: pointer;
+}
+.Location:hover .Location__title,
+.Location:hover .Location__text {
+  color: #3c4a61;
+}
+
+.Location:hover .Location__arrow {
+  stroke: #3c4a61;
+}
+
+@media only screen and (min-width: 981px) and (max-width: 1220px) {
+  .Location__title {
+    font-size: 36px;
+    margin-bottom: 10px;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 980px) {
+  .Location__title {
+    font-size: 30px;
+    border-bottom: 0;
+    margin-bottom: 0;
+  }
+  .Location__text {
+    font-size: 16px;
+  }
+  .Location__address {
+    margin-bottom: 0;
+  }
+}
+@media only screen and (min-width: 0) and (max-width: 767px) {
+  .Location {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 36px;
+    padding-bottom: 10px;
+  }
+
+  .Location__description {
+    display: block;
+    height: 100%;
+    padding-bottom: 30px;
+  }
+  .Location__title {
+    font-size: 24px;
+    border-bottom: 0;
+    margin-bottom: 0;
+  }
+  .Location__text {
+    margin-left: auto;
+    font-size: 16px;
+  }
+  .Location__span {
+    max-width: 270px;
+  }
+}

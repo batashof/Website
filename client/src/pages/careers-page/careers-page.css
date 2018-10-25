@@ -1,0 +1,184 @@
+.Careers-banner {
+  border-top: 1px solid #d6dbdc;
+  border-bottom: 1px solid #d6dbdc;
+  display: flex;
+  height: 254px;
+  margin-bottom: 55px;
+}
+.Careers-banner__wrap_position_left {
+  width: 72%;
+}
+.Careers-banner__wrap_position_right {
+  width: 28%;
+
+  background-color: #3c4a61;
+}
+
+.Careers-banner__text {
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  color: #3c4a61;
+  position: relative;
+  font-size: 40px;
+  line-height: 60px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  padding-top: 45px;
+  width: 75%;
+}
+.Careers-banner__text::before {
+  content: "“";
+  position: absolute;
+  top: 0;
+  left: 0;
+  font-size: 140px;
+  line-height: 100px;
+  color: #75c8d2;
+}
+.Careers-banner__text::after {
+  content: "„";
+  position: absolute;
+  right: 5px;
+  bottom: 0;
+  color: #3c4a61;
+  font-size: 140px;
+  box-sizing: border-box;
+}
+
+.Careers-culture .Layout__side {
+  background: url("/img/culture.png") no-repeat top center;
+  background-size: cover;
+}
+.Careers-culture.Layout_width_half_position_left .Layout__wrap,
+.Careers-member.Layout_width_half_position_right .Layout__wrap {
+  max-width: none;
+  padding: 0;
+}
+.Careers-culture .Layout__main {
+  background: url("/img/careers-background.png") no-repeat top center;
+  background-size: cover;
+  box-sizing: border-box;
+  padding-left: 300px;
+  padding-bottom: 60px;
+  padding-top: 60px;
+  padding-right: 30px;
+  height: 373px;
+}
+
+.Careers-culture__title,
+.Careers-member__title {
+  margin-top: 0;
+  margin-bottom: 20px;
+  font-size: 30px;
+  font-weight: 400;
+  letter-spacing: 0.8px;
+  text-transform: uppercase;
+  color: #fff;
+}
+.Careers-culture .Button,
+.Careers-member .Button {
+  width: 180px;
+}
+
+.Careers-culture__text,
+.Careers-member__text {
+  font-size: 18px;
+  font-weight: 200;
+  line-height: 1.45;
+  color: #fff;
+  margin-top: 0;
+  margin-bottom: 30px;
+}
+.Careers-culture .Layout__main:before {
+  margin-left: -300px;
+  margin-top: -60px;
+  content: "";
+  position: absolute;
+  width: 52.8%;
+  background: #3c4a61;
+  height: 373px;
+  opacity: 0.5;
+}
+
+.Careers-member .Layout__main:before {
+  margin-left: -30px;
+  margin-top: -60px;
+  content: "";
+  position: absolute;
+  width: 50%;
+  background: #75c8d2;
+  height: 373px;
+  opacity: 0.5;
+}
+
+.Careers-member .Layout__side {
+  background: url("/img/member.png") no-repeat top center;
+  background-size: cover;
+}
+
+.Careers-culture.Layout_width_half_position_left .Layout__main {
+  width: 55%;
+}
+
+.Careers-member .Layout__main {
+  background: url("/img/careers-background.png") no-repeat top center;
+  background-size: cover;
+  box-sizing: border-box;
+  padding-left: 30px;
+  padding-bottom: 60px;
+  padding-top: 60px;
+  padding-right: 200px;
+  height: 373px;
+}
+
+@media only screen and (max-width: 1430px) {
+  .Careers-culture .Layout__main {
+    padding-left: 100px;
+    padding-bottom: 60px;
+  }
+  .Careers-culture .Layout__main:before {
+    width: 52.5%;
+    margin-left: -100px;
+  }
+}
+@media only screen and (max-width: 1280px) {
+  .Careers-member .Layout__main {
+    padding-right: 100px;
+  }
+  .Careers-culture .Layout__main {
+    padding-left: 30px;
+    padding-right: 100px;
+  }
+  .Careers-culture .Layout__main:before {
+    width: 52.7%;
+    margin-left: -30px;
+  }
+}
+@media only screen and (max-width: 980px) {
+  .Careers-culture.Layout_width_half_position_left .Layout__main,
+  .Careers-member.Layout_width_half_position_right .Layout__main,
+  .Careers-member .Layout__main:before,
+  .Careers-culture .Layout__main:before,
+  .Careers-banner__wrap_position_left {
+    width: 100%;
+  }
+
+  .Careers-member .Layout__side,
+  .Careers-culture .Layout__side,
+  .Careers-banner__wrap_position_right {
+    display: none;
+  }
+
+  .Careers-banner__text {
+    font-size: 30px;
+  }
+  .Careers-banner__text::before {
+    font-size: 100px;
+    left: -20px;
+  }
+  .Careers-banner__text::after {
+    font-size: 100px;
+    right: -30px;
+  }
+}

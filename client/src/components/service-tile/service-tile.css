@@ -1,0 +1,38 @@
+.ServiceTile {
+  display: block;
+  text-decoration: none;
+  text-align: center;
+  min-height: 145px;
+  padding: 40px 30px;
+  border-right: 1px solid #d6dbdc;
+  border-bottom: 1px solid #d6dbdc;
+  box-sizing: border-box;
+  height: 100%;
+  max-height: 245px;
+}
+.Service__icon {
+  transition: fill 0.15s linear;
+}
+.ServiceTile__icon_wide {
+  min-width: 150px;
+}
+.ServiceTile__name {
+  font-size: 14px;
+  color: #344b61;
+  font-style: normal;
+  font-weight: 400;
+  font-family: FlamaSemicondensed, Arial, san-serif;
+  text-transform: uppercase;
+  line-height: 1.13;
+  letter-spacing: 0.4px;
+  margin-top: 30px;
+  margin-bottom: 15px;
+}
+@media only screen and (min-width: 1025px) {
+  .ServiceTile__name {
+    font-size: 16px;
+  }
+  .ServiceTile:hover .Service__icon {
+    fill: #e45062;
+  }
+}

@@ -1,0 +1,243 @@
+.leadersCarousel {
+  padding-top: 163px;
+}
+
+.leadersCarousel__title {
+  margin-top: 0;
+  margin-bottom: 20px;
+  font-size: 42px;
+  line-height: 1.24;
+  font-weight: 400;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: #3c4a61;
+}
+
+.leadersCarousel .leadersCarousel__wrap {
+  padding-right: 50px;
+  padding-left: 50px;
+}
+
+.leadersCarousel .Carousel__slide img {
+  width: auto;
+  height: 400px;
+}
+
+.leadersCarousel .Carousel_controls_out .Carousel__slick {
+  max-width: 100%;
+}
+
+.leadersCarousel .Carousel_controls_out .Carousel__btn .Button__arrow {
+  stroke: #8dc63f;
+}
+
+.leadersContent {
+  background-color: #3c4a61;
+  box-shadow: inset 0 15px 0 0px #e45062;
+  border-top: 1px solid #d6dbdc;
+  padding-left: 85px;
+  padding-right: 85px;
+  box-sizing: border-box;
+}
+
+.leadersContent .Layout__wrap {
+  background-color: #fff;
+  width: 100%;
+  max-width: 1180px;
+  padding-left: 0;
+  padding-right: 0;
+  margin: 0 auto;
+}
+
+.LeadersList {
+  position: relative;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  min-height: 350px;
+}
+
+.LeadersList__item {
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  transition: opacity 500ms ease;
+}
+
+.LeadersList__item_active {
+  opacity: 1;
+}
+
+.LeadersList__inner {
+  position: relative;
+  padding-top: 26px;
+  padding-bottom: 21px;
+  border-bottom: 1px solid #d6dbdc;
+}
+
+.LeadersList__name {
+  font-size: 42px;
+  font-weight: 400;
+  line-height: 1;
+  letter-spacing: 1px;
+  color: #75c8d2;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.LeadersList__position {
+  font-size: 18px;
+  font-weight: 200;
+  line-height: 1;
+  letter-spacing: 0.4px;
+  color: #3c4a61;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.LeadersList__inner .Button {
+  z-index: 2;
+  position: absolute;
+  top: 0;
+  right: 8.6%;
+  bottom: 0;
+  padding-right: 85px;
+  padding-top: 70px;
+  font-size: 14px;
+  letter-spacing: 0.3px;
+  color: #75c8d2;
+  text-transform: uppercase;
+}
+
+.LeadersList__inner .Button .Button__arrow {
+  width: 6px;
+  height: 17px;
+  stroke: #8dc63f;
+  right: 73px;
+  top: 69px;
+}
+
+.LeadersList__inner .Button:after {
+  content: "";
+  display: block;
+  width: 59px;
+  height: 100%;
+  position: absolute;
+  right: 0;
+  top: 0;
+  background-color: #007bb6;
+  background-image: url(img/linkedin-logo.svg);
+  background-size: 70%;
+  background-repeat: no-repeat;
+  background-position: center;
+  transition: color 0.15s linear;
+}
+
+.LeadersList__inner .Button:hover::after {
+  background-image: url(img/linkedin-logo_green.svg);
+}
+
+.LeadersList__text {
+  padding-left: 35px;
+  padding-right: 35px;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  font-size: 18px;
+  font-weight: 200;
+  line-height: 1.33;
+  color: #3c4a61;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+@media only screen and (min-width: 1024px) {
+  .leadersCarousel .Carousel_controls_out .Carousel__btn:hover .Button__arrow {
+    stroke: #75c8d2;
+  }
+}
+
+@media only screen and (min-width: 767px) and (max-width: 1024px) {
+  .leadersCarousel__title {
+    font-size: 36px;
+  }
+
+  .LeadersList__name {
+    font-size: 36px;
+  }
+
+  .LeadersList__position {
+    font-size: 16px;
+  }
+
+  .LeadersList__text {
+    font-size: 16px;
+  }
+}
+
+@media only screen and (max-width: 980px) {
+  .LeadersList {
+    min-height: 400px;
+  }
+
+  .LeadersList__inner .Button {
+    position: static;
+    width: 100%;
+    padding-right: 0;
+    font-size: 0;
+  }
+
+  .LeadersList__inner .Button .Button__arrow {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .leadersCarousel__title {
+    font-size: 24px;
+  }
+
+  .LeadersList__name {
+    padding-left: 20px;
+    padding-right: 20px;
+    font-size: 26px;
+  }
+
+  .leadersContent {
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+
+  .LeadersList__position {
+    font-size: 14px;
+  }
+
+  .LeadersList__inner .Button:after {
+    position: static;
+    width: 100%;
+    height: 58px;
+    background-size: auto 80%;
+  }
+
+  .LeadersList__inner {
+    padding-bottom: 0;
+  }
+
+  .LeadersList__text {
+    font-size: 14px;
+  }
+
+  .LeadersList {
+    min-height: 450px;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .LeadersList {
+    min-height: 580px;
+  }
+
+  .LeadersList__text {
+    padding: 15px;
+  }
+}

@@ -1,0 +1,8 @@
+  .Section_bg-picture_significant-experience .Layout__side {
+    background-image: url("img/desc.png");
+    order: -1;
+  }
+  .Section_bg-picture_agile-journey .Layout__side {
+    background-image: url("img/project.png");
+    order: 1;
+  }

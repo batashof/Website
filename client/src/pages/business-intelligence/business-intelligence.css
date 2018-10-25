@@ -1,0 +1,8 @@
+  .Section_bg-picture_BI .Layout__side {
+    background-image: url("img/BI.jpg");
+    order: -1;
+  }
+  .Section_bg-picture_consultant .Layout__side {
+    background-image: url("img/business.jpg");
+    order: 1;
+  }

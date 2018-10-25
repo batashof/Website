@@ -1,0 +1,287 @@
+.Header {
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: #f9f9fa;
+  border-top: 3px solid #75c8d2;
+  border-bottom: 1px solid #d6dbdc;
+  z-index: 3;
+}
+
+.Header__wrap {
+  box-sizing: border-box;
+  position: relative;
+  width: 100%;
+  max-width: 1220px;
+  padding-top: 28px;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+
+.contacts {
+  position: absolute;
+  top: 11px;
+  right: 20px;
+  font-size: 14px;
+  line-height: 1.57;
+  font-weight: 500;
+  font-family: FlamaSemicondensed, Arial, san-serif;
+}
+
+.contacts__link {
+  position: relative;
+  margin: 0 0 0 10px;
+  letter-spacing: 0.1px;
+  color: #3c4a61;
+  text-decoration: none;
+  padding-left: 15px;
+}
+
+.contacts__link:before {
+  position: absolute;
+  color: #75c8d2;
+  left: 0;
+  top: -2px;
+}
+
+.contacts__link_role_phone:before {
+  content: "T: ";
+}
+
+.contacts__link_role_mail:before {
+  content: "E: ";
+}
+
+.main-nav {
+  font-size: 18px;
+  line-height: 2.22;
+  font-weight: 200;
+  letter-spacing: 1px;
+  color: #3c4a61;
+  font-family: FlamaSemicondensed, Arial, san-serif;
+  text-decoration: none;
+}
+
+.main-nav__btn {
+  display: none;
+  border: none;
+  padding: 7px 9px;
+  background: #75c8d2;
+  cursor: pointer;
+}
+
+.main-nav__btn span {
+  display: block;
+  width: 27px;
+  height: 3px;
+  margin: 6px 0;
+  position: relative;
+  background: #fff;
+}
+.main-nav__btn_on span {
+  background: transparent;
+}
+
+.main-nav__btn span:before,
+.main-nav__btn span:after {
+  content: "";
+  width: inherit;
+  height: inherit;
+  position: absolute;
+  left: 0;
+  background: #fff;
+  transition: transform 0.15s linear, top 0.15s linear 0.15s,
+    bottom 0.15s linear 0.15s;
+}
+
+.main-nav__btn span:before {
+  top: -6px;
+}
+
+.main-nav__btn span:after {
+  bottom: -6px;
+}
+
+.main-nav__btn_on span:after,
+.main-nav__btn_on span:before {
+  transition: transform 0.15s linear 0.15s, top 0.15s linear,
+    bottom 0.15s linear;
+}
+
+.main-nav__btn_on span:before {
+  top: 0;
+  transform: rotate(-33deg);
+}
+
+.main-nav__btn_on span:after {
+  bottom: 0;
+  transform: rotate(33deg);
+}
+
+.main-nav__close-btn {
+  display: none;
+  position: relative;
+  height: 25px;
+  width: 25px;
+  margin: 24px auto 3px;
+  cursor: pointer;
+  border: 0;
+  background: none;
+}
+
+.main-nav__close-btn:before,
+.main-nav__close-btn:after {
+  content: "";
+  width: inherit;
+  height: 2px;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  margin: -1px 0 0;
+  background: #3c4a61;
+}
+
+.main-nav__close-btn:before {
+  transform: rotate(-45deg);
+}
+
+.main-nav__close-btn:after {
+  transform: rotate(45deg);
+}
+
+.main-nav > .List_layout_horisontal {
+  margin-top: 10px;
+}
+
+.main-nav > .List_layout_horisontal > .List__item:last-child {
+  display: none;
+}
+
+.main-nav > .List_layout_horisontal > .List__item > a {
+  display: block;
+  position: relative;
+  text-decoration: none;
+  color: #3c4a61;
+  padding-bottom: 23px;
+}
+
+.main-nav > .List_layout_horisontal > .List__item > a:after {
+  content: "";
+  width: 0;
+  height: 1px;
+  position: absolute;
+  bottom: 22px;
+  left: 50%;
+  transition: width 0.15s linear;
+  transform: translateX(-50%);
+  background: #8dc63f;
+}
+
+.main-nav .Button {
+  display: none;
+}
+
+@media only screen and (max-width: 767px) {
+  .Header__wrap {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    align-content: center;
+  }
+  .contacts {
+    display: none;
+  }
+
+  .main-nav {
+    line-height: 0;
+  }
+
+  .main-nav__btn {
+    display: inline-block;
+  }
+
+  .main-nav .List_layout_horisontal {
+    display: none;
+  }
+
+  .main-nav_expand > .List_layout_vertical {
+    width: 100%;
+    padding: 25px;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    text-align: left;
+    background: #8ac9d4;
+    z-index: 2;
+    transition: min-height 0.4s linear;
+    font-weight: 200;
+    overflow: hidden;
+  }
+
+  .main-nav_expand .List_layout_vertical .List__item {
+    cursor: pointer;
+  }
+
+  .main-nav .Button {
+    display: inline-block;
+  }
+
+  .main-nav_expand .List_layout_vertical .List__item .Button {
+    margin-left: 10px;
+  }
+
+  .main-nav_expand .List_layout_vertical .List__item .Button__arrow {
+    height: 20px;
+    width: 8px;
+    stroke: #fff;
+    position: static;
+  }
+
+  .main-nav_expand .List_layout_vertical a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 24px;
+    line-height: 1.92;
+  }
+
+  .main-nav__close-btn {
+    display: inline-block;
+  }
+}
+
+@media only screen and (min-width: 767px) and (max-width: 980px) {
+  .main-nav {
+    width: 78%;
+    font-size: 15px;
+  }
+}
+
+@media only screen and (min-width: 980px) {
+  .main-nav {
+    width: 71%;
+  }
+}
+
+@media only screen and (min-width: 767px) and (max-width: 1024px) {
+  .Header__wrap {
+    padding-top: 45px;
+  }
+}
+
+@media only screen and (min-width: 1025px) {
+  .contacts__link:hover {
+    color: #8dc63f;
+  }
+
+  .contacts__link {
+    transition: color 0.15s linear;
+  }
+
+  .main-nav > .List_layout_horisontal > .List__item:hover > a:after {
+    width: 100%;
+  }
+}

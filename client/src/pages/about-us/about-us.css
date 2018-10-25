@@ -1,0 +1,240 @@
+.about-us-promo {
+  padding-top: 163px;
+}
+
+.about-us-promo__title {
+  margin-top: 0;
+  margin-bottom: 20px;
+  font-size: 42px;
+  line-height: 1.24;
+  font-weight: 400;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: #3c4a61;
+}
+
+.about-us-promo__text {
+  font-size: 24px;
+  line-height: 1.3;
+  letter-spacing: 0.6px;
+  color: #75c8d2;
+}
+
+.about-us-mission {
+  background-color: #75c8d2;
+  position: relative;
+}
+
+.about-us-mission .Layout__wrap {
+  box-sizing: border-box;
+  background-color: #fff;
+
+  background-color: #75c8d2;
+}
+
+.about-us-mission .Layout__main {
+  padding-top: 72px;
+  padding-bottom: 65px;
+  background-color: #fff;
+}
+
+.about-us-mission__text {
+  margin-top: 0;
+  font-size: 18px;
+  line-height: 1.33;
+  font-weight: 200;
+  letter-spacing: 0.45px;
+  color: #3c4a61;
+  padding-left: 8.4%;
+  padding-right: 8.4%;
+}
+
+.about-us-mission .Button {
+  margin-top: 54px;
+}
+
+.about-us-mission:after,
+.about-us-mission:before {
+  content: "";
+  display: block;
+  position: absolute;
+  z-index: 1;
+  width: 358px;
+  height: 319px;
+  bottom: 0;
+  transform: translateY(50%);
+}
+
+.about-us-mission:before {
+  background: url(img/about_dots_bg_left.png) no-repeat;
+}
+
+.about-us-mission:after {
+  right: 0;
+  background: url(img/about_dots_bg_right.png) no-repeat;
+}
+
+.about-us-establishing {
+  background-color: #3c4a61;
+}
+.about-us-establishing .Layout__side {
+  background-image: url("img/establishing-bg.png");
+}
+
+.about-us-establishing .Layout__main {
+  box-sizing: border-box;
+  padding-top: 69px;
+  padding-bottom: 30px;
+  padding-left: 69px;
+}
+
+.about-us-establishing__title {
+  font-size: 30px;
+  font-weight: 400;
+  letter-spacing: 0.8px;
+  text-transform: uppercase;
+  color: #fff;
+  margin-top: 0;
+  margin-bottom: 20px;
+}
+.about-us-establishing__text {
+  font-size: 18px;
+  font-weight: 200;
+  line-height: 1.45;
+  color: #fff;
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+.about-us-delivery {
+  padding-top: 74px;
+  padding-bottom: 107px;
+}
+.about-us-delivery__title {
+  font-size: 30px;
+  text-transform: uppercase;
+  font-weight: 400;
+  font-family: FlamaSemicondensed, Arial, san-serif;
+  color: #3c4a61;
+  margin-top: 0;
+  margin-bottom: 23px;
+}
+.about-us-delivery__text {
+  font-size: 18px;
+  font-weight: 200;
+  font-family: FlamaSemicondensed, Arial, san-serif;
+  color: #3c4a61;
+  margin-top: 0;
+  margin-bottom: 25px;
+  line-height: 1.45;
+}
+.about-us-management {
+  background-color: #354b60;
+}
+.about-us-management__title {
+  margin-top: 0;
+  margin-bottom: 45px;
+  font-size: 30px;
+  letter-spacing: 0.85px;
+  color: #fff;
+  text-transform: uppercase;
+  font-weight: 200;
+}
+
+.about-us-management__wrap {
+  padding-top: 120px;
+  padding-bottom: 57px;
+}
+.about-us-management:before {
+  content: "";
+  display: block;
+  width: 100%;
+  max-width: 1180px;
+  margin: 0 auto;
+  height: 10px;
+  background: #e45062;
+  transform: translateY(-10px);
+}
+.about-us-locations__wrap {
+  padding-top: 65px;
+  padding-bottom: 55px;
+}
+.about-us-locations__title {
+  margin-bottom: 24px;
+  font-size: 36px;
+  text-transform: uppercase;
+  font-family: FlamaSemicondensed, Arial, san-serif;
+  color: #3c4a61;
+  text-align: center;
+  font-weight: 400;
+  margin-top: 0;
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  .about-us-promo__title {
+    font-size: 36px;
+  }
+  .about-us-delivery {
+    padding-top: 40px;
+    padding-bottom: 50px;
+  }
+  .about-us-management__title {
+    font-size: 24px;
+  }
+  .about-us-management__wrap {
+    padding-top: 60px;
+    padding-bottom: 40px;
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  .about-us-promo__text {
+    font-size: 16px;
+  }
+  .about-us-mission:after,
+  .about-us-mission:before {
+    display: none;
+  }
+  .about-us-establishing__text {
+    font-size: 16px;
+    margin-bottom: 15px;
+  }
+  .about-us-management__title {
+    font-size: 20px;
+  }
+  .about-us-management__title {
+    margin-bottom: 30px;
+  }
+}
+
+@media only screen and (max-width: 980px) {
+  .about-us-delivery .Button {
+    margin-bottom: 30px;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .about-us-promo {
+    padding-top: 78px;
+  }
+  .about-us-promo__title {
+    font-size: 24px;
+  }
+  .about-us-establishing__title {
+    font-size: 20px;
+  }
+  .about-us-delivery__title {
+    font-size: 20px;
+    margin-bottom: 10px;
+  }
+  .about-us-delivery {
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+  .about-us-delivery .Button {
+    width: 100%;
+  }
+  .about-us-management__wrap {
+    padding-top: 20px;
+    padding-bottom: 30px;
+  }
+}

@@ -1,0 +1,182 @@
+.JobListPage {
+  padding-top: 110px;
+}
+.JobListPage__top {
+  position: relative;
+  background: url("/img/jobs-landing-banner.png") center no-repeat;
+  background-size: cover;
+  height: 230px;
+  display: flex;
+}
+.JobListPage__top:before {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  background-color: rgba(45, 55, 82, 0.2);
+}
+.JobListPage__top-title {
+  font-size: 60px;
+  line-height: 60px;
+  color: #fff;
+  margin: auto;
+  font-weight: 600;
+  z-index: 2;
+}
+.JobListPage__video_hidden,
+.JobListPage__top_hidden {
+  display: none;
+}
+.JobListPage__filter {
+  background-color: #3c4a61;
+  color: #fff;
+}
+.JobListPage__wrap_filter {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.JobListPage__wrap {
+  box-sizing: border-box;
+  width: 100%;
+  max-width: 1220px;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin: auto;
+}
+.JobListPage__content {
+  padding: 54px 0 0;
+}
+.JobListPage__content-title {
+  margin: 0 0 40px;
+  font-size: 28px;
+  line-height: 28px;
+  font-weight: 400;
+  letter-spacing: 0.6px;
+  text-transform: uppercase;
+}
+.JobListPage__content-list {
+  display: flex;
+  flex: 1 1 auto;
+  padding: 0;
+  margin: 0 -10px;
+  flex-wrap: wrap;
+}
+.JobListPage__preview-item {
+  padding: 30px 43px 23px;
+  background: #f4f4f4;
+  margin: 10px;
+  list-style: none;
+  flex-basis: calc(50% - 20px);
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+.JobListPage__preview-item .Button {
+  margin-top: auto;
+}
+.JobListPage__preview-title {
+  margin: 0;
+  font-size: 28px;
+  line-height: 28px;
+  font-weight: 500;
+  letter-spacing: 0.8px;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+.JobListPage__preview-location {
+  display: block;
+  font-size: 18px;
+  line-height: 18px;
+  color: #75c8d2;
+  margin: 15px 0 0;
+  font-weight: 400;
+}
+.JobListPage__preview-devider {
+  margin: 20px;
+}
+.JobListPage__preview-city {
+  text-transform: capitalize;
+}
+.JobListPage .Video_playing .VideoPlayer {
+  margin: 0;
+}
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  .JobListPage__top-title {
+    font-size: 50px;
+    line-height: 50px;
+    white-space: nowrap;
+  }
+  .JobListPage__preview-item {
+    flex-basis: 100%;
+  }
+  .JobListPage__preview-title {
+    font-size: 26px;
+    line-height: 26px;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .JobListPage {
+    padding-top: 55px;
+  }
+  .JobListPage__top {
+    height: 150px;
+  }
+  .JobListPage__top-title {
+    font-size: 40px;
+    line-height: 40px;
+    width: 100%;
+    text-align: center;
+    padding: 0 20px;
+    box-sizing: border-box;
+  }
+  .JobListPage .SocialLinks {
+    white-space: nowrap;
+    padding-right: 0;
+  }
+  .JobListPage__content-title {
+    font-size: 26px;
+    line-height: 26px;
+    margin: 0 0 20px;
+  }
+  .JobListPage__content-list {
+    margin: 0;
+  }
+  .JobListPage__preview-item {
+    flex-basis: 100%;
+    padding: 20px;
+    text-align: center;
+    margin: 15px 0;
+  }
+  .JobListPage__preview-title {
+    font-size: 22px;
+    line-height: 22px;
+    text-align: left;
+  }
+  .JobListPage__preview-text {
+    text-align: left;
+  }
+  .JobListPage__preview-location {
+    text-align: left;
+  }
+  .JobListPage__preview-item .Button {
+    margin: auto;
+  }
+}
+@media only screen and (max-width: 480px) {
+  .JobListPage__wrap_filter {
+    order: 1;
+    flex-direction: column;
+    padding-bottom: 20px;
+  }
+  .JobListPage__wrap_filter .JobsFilter {
+    order: 1;
+  }
+  .JobListPage__preview-item .Button {
+    width: 100%;
+    min-width: auto;
+  }
+}

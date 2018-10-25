@@ -1,0 +1,32 @@
+.Industries {
+  margin: 0 auto;
+  border-bottom: 1px solid rgba(60, 74, 97, 0.3);
+}
+
+.Industries .Slider {
+  width: 100%;
+  max-width: 100%;
+  border: none;
+}
+
+.List_layout_horisontal-centred .Industries__logo {
+  height: 50px;
+}
+
+.Industries-carousel {
+  padding-top: 60px;
+  padding-bottom: 110px;
+}
+
+.Industries-carousel .Layout__main {
+  width: 85%;
+  margin: auto;
+}
+
+.Industries-carousel .Carousel__slide {
+  min-height: 80px;
+}
+.Industries-carousel .Carousel__slide img {
+  display: inline-block;
+  width: 90%;
+}

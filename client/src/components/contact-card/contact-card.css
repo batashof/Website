@@ -1,0 +1,77 @@
+.ContactCard {
+  width: 302px;
+  margin-bottom: 30px;
+  text-align: left;
+}
+
+.ContactCard__title {
+  margin-bottom: 15px;
+  font-size: 24px;
+  line-height: 1;
+  letter-spacing: 0.6px;
+  text-transform: capitalize;
+  color: #3c4a61;
+}
+
+.ContactCard__card {
+  background-color: #3c4a61;
+  padding-bottom: 30px;
+}
+
+.ContactCard__photo {
+  display: block;
+  width: 100%;
+  margin-bottom: 26px;
+}
+
+.ContactCard__name {
+  padding-left: 26px;
+  padding-right: 26px;
+  margin-bottom: 24px;
+  font-size: 24px;
+  line-height: 1.25;
+  font-weight: 400;
+  letter-spacing: 0.6px;
+  color: #fff;
+}
+
+.ContactCard__option {
+  display: block;
+  position: relative;
+  padding-left: 56px;
+  padding-right: 26px;
+  margin-bottom: 12px;
+  font-size: 18px;
+  font-weight: 200;
+  line-height: 1.2;
+  color: #75c8d2;
+  font-style: normal;
+  text-decoration: none;
+  transition: color 0.15s linear;
+}
+
+.ContactCard__option:not(.ContactCard__option_address):hover {
+  color: #fff;
+}
+
+.ContactCard__icon {
+  position: absolute;
+  width: 30px;
+  left: 26px;
+}
+
+.ContactCard__option svg {
+  fill: #9ed8df;
+}
+
+@media only screen and (min-width: 640px) and (max-width: 980px) {
+  .ContactCard {
+    width: 49%;
+  }
+}
+
+@media only screen and (max-width: 640px) {
+  .ContactCard {
+    width: 100%;
+  }
+}

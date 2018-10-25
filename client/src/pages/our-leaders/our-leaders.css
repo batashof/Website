@@ -1,0 +1,135 @@
+.deliveryList {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  justify-content: space-around;
+  padding-top: 65px;
+  padding-bottom: 55px;
+}
+
+.deliveryList__item {
+  padding-top: 100px;
+  background-position: center top;
+  background-repeat: no-repeat;
+  font-size: 18px;
+  text-align: center;
+  font-weight: 400;
+  color: #3c4a61;
+  text-transform: uppercase;
+}
+
+.deliveryList__item_augmentation {
+  background-image: url(./img/deliveryList__item_augmentation-bg.svg);
+}
+
+.deliveryList__item_dedicated {
+  background-image: url(./img/deliveryList__item_dedicated-bg.svg);
+}
+
+.deliveryList__item_project-based {
+  background-image: url(./img/deliveryList__item_project-based-bg.png);
+}
+
+.deliveryList__item_product-development {
+  background-image: url(./img/deliveryList__item_product-development-bg.png);
+  background-position-y: 10px;
+}
+
+.linkTiles {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.linkTiles__tile {
+  width: 50%;
+  padding-top: 80px;
+  padding-bottom: 80px;
+  padding-left: 20px;
+  padding-right: 20px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-color: #3c4a61;
+}
+
+.linkTiles__tile_people {
+  background-image: url(./img/linkTile_people-bg.jpg);
+  border-right: 1px solid #fff;
+}
+
+.linkTiles__tile_skills {
+  background-image: url(./img/linkTile_skills-bg.jpg);
+}
+
+.Section .linkTiles__tile .Button {
+  color: #fff;
+  font-weight: 300;
+  text-transform: uppercase;
+  font-size: 36px;
+  margin-right: 45px;
+  margin-top: 0;
+}
+
+.linkTiles__tile .Button .Button__arrow {
+  stroke: #8dc63f;
+  left: none;
+  right: -30px;
+  top: 4px;
+  height: 35px;
+  width: 15px;
+}
+
+@media only screen and (min-width: 767px) and (max-width: 1024px) {
+  .deliveryList {
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 30px;
+    padding-bottom: 50px;
+  }
+
+  .deliveryList__item {
+    font-size: 14px;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .deliveryList {
+    padding-left: 0;
+    padding-right: 0;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    flex-wrap: wrap;
+  }
+  .deliveryList__item {
+    width: 50%;
+    margin-bottom: 30px;
+  }
+
+  .linkTiles {
+    flex-wrap: wrap;
+  }
+
+  .linkTiles__tile {
+    width: 100%;
+  }
+
+  .linkTiles__tile_people {
+    width: 100%;
+    border-right: none;
+    border-bottom: 1px solid #fff;
+  }
+}
+
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+  .deliveryList__item {
+    font-size: 16px;
+  }
+}
+
+@media only screen and (min-width: 0) and (max-width: 480px) {
+  .deliveryList__item {
+    font-size: 14px;
+  }
+}

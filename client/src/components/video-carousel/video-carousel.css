@@ -1,0 +1,79 @@
+.VideoCarousel {
+  padding-bottom: 118px;
+  overflow: hidden;
+}
+
+.VideoCarousel__inner {
+  display: flex;
+}
+
+.VideoCarousel__inner_in-transition {
+  transition: margin-left ease-out 0.4s;
+}
+
+.VideoCarousel .Video {
+  width: 100%;
+}
+
+.VideoCarousel__controls {
+  position: relative;
+  background-color: #fff;
+}
+
+.VideoCarousel__controls:before,
+.VideoCarousel__controls:after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  width: 25%;
+  height: 100%;
+}
+
+.VideoCarousel__controls:before {
+  background: url(/img/video-bg_left.png) no-repeat top -6px left;
+  left: 0;
+}
+
+.VideoCarousel__controls:after {
+  background: url(/img/video-bg_right.png) no-repeat top -6px right;
+  right: 0;
+}
+
+.VideoCarousel__controls__wrap {
+  width: 100%;
+  max-width: 1220px;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin: 0 auto;
+  box-sizing: border-box;
+}
+
+.VideoCarousel__controls-item {
+  box-sizing: border-box;
+  width: 100%;
+  height: 100%;
+  padding: 80px 30px;
+  height: 250px;
+  background: #fff;
+  border-right: 1px solid #d6dbdc;
+  border-bottom: 1px solid #d6dbdc;
+  cursor: pointer;
+  transition: box-shadow 0.15s linear;
+  z-index: 2;
+}
+
+.VideoCarousel__controls-item_active {
+  box-shadow: inset 0 -10px 0 #e45062;
+}
+
+.VideoCarousel__controls .Carousel__slide:first-child {
+  border-left: 1px solid #d6dbdc;
+}
+
+@media only screen and (max-width: 767px) {
+  .VideoCarousel__controls-item {
+    height: 120px;
+    padding: 30px 10px;
+  }
+}
